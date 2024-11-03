@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import './Header.css'; // Import the CSS file
 import { NavLink } from 'react-router-dom';
 function Footer() {

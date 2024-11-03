@@ -1,8 +1,8 @@
 import './App.css';
 // import { TonConnectButton } from '@tonconnect/ui-react';
-import { useTonConnect } from './hooks/useTonConnect.ts';
-import { useCounterContract } from './hooks/useCounterContract';
-import Header from './components/Header.tsx';
+// import { useTonConnect } from './hooks/useTonConnect.ts';
+// import { useCounterContract } from './hooks/useCounterContract';
+// import Header from './components/Header.tsx';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.tsx';
 import Leaderboard from './pages/Leaderbooad.tsx';
@@ -30,8 +30,8 @@ function App() {
       });
     }
   }, []);
-  const { connected } = useTonConnect();
-  const { value, address, sendIncrement } = useCounterContract();
+  // const { connected } = useTonConnect();
+  // const { value, address, sendIncrement } = useCounterContract();
 
   return (
     <div className='App'>
