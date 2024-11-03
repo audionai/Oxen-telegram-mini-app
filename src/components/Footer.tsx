@@ -3,9 +3,10 @@ import './Header.css'; // Import the CSS file
 import { NavLink } from 'react-router-dom';
 function Footer() {
   // State to keep track of the active icon
-  const [activeLink, setActiveLink] = useState<string | null>(null);
+//   const [activeLink, setActiveLink] = useState<string | null>(null);
 
   // Icons array (could be SVG paths, Unicode, or image sources)
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const icons = [
     { id: 'home', label: 'Home', icon: '🏠' },
     { id: 'leaderboard', label: 'Leaderboard', icon: '🏠' },
