@@ -1,38 +1,47 @@
 import './App.css';
-import { TonConnectButton } from '@tonconnect/ui-react';
+// import { TonConnectButton } from '@tonconnect/ui-react';
 import { useTonConnect } from './hooks/useTonConnect.ts';
 import { useCounterContract } from './hooks/useCounterContract';
 import Header from './components/Header.tsx';
-
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home.tsx';
+import Leaderboard from './pages/Leaderbooad.tsx';
+import Friends from './pages/Friends.tsx';
+import Airdrop from './pages/Airdrop.tsx';
+import { useEffect } from 'react';
 function App() {
+  useEffect(() => {
+    // Check if the Telegram WebApp object is available
+    if (window.Telegram?.WebApp) {
+      const tg = window.Telegram.WebApp;
+  
+      // Initialize the Telegram Web App
+      tg.ready();
+  
+      // Set a custom header
+      tg.expand();
+      tg.MainButton.setText('Custom Header');
+      tg.MainButton.show();
+      tg.setHeaderColor('red'); // Use 'bg_color' or a hex code like '#ffffff'
+  
+      // Example: Button click handling
+      tg.MainButton.onClick(() => {
+        alert('Main button clicked!');
+      });
+    }
+  }, []);
   const { connected } = useTonConnect();
   const { value, address, sendIncrement } = useCounterContract();
 
   return (
     <div className='App'>
-      <Header/>
-      <div className='Container'>
-        <TonConnectButton />
+      <Routes>
+        <Route path="/tma/" element={<Home />} />
+        <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/firends" element={<Friends />} />
+        <Route path="/airdrop" element={<Airdrop />} />
+      </Routes>
 
-        {/* <div className='Card'>
-          <b>Counter Address</b>
-          <div className='Hint'>{address?.slice(0, 30) + '...'}</div>
-        </div> */}
-
-        {/* <div className='Card'>
-          <b>Counter Value</b>
-          <div>{value ?? 'Loading...'}</div>
-        </div>
-
-        <a
-          className={`Button ${connected ? 'Active' : 'Disabled'}`}
-          onClick={() => {
-            sendIncrement();
-          }}
-        >
-          Increment
-        </a> */}
-      </div>
     </div>
   );
 }

@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.Container {
+  background-color: ;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -20,7 +24,7 @@
 
 @keyframes logo-spin {
   from {
-    transform: rotate(0deg);
+    /* transform: rotate(0deg); */
   }
   to {
     transform: rotate(360deg);
@@ -39,4 +43,63 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+.oxens_ img {
+  width: 150px;
+
+  height: 150px;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.oxens_ p {
+  font-size: 32px;
+
+}
+
+.oxens_ {
+  border-radius: 20px;
+  z-index: ;
+  width: 100%;
+  height: calc(100% - 150px);
+  background: black;
+  position: absolute;
+  bottom: 15px;
+  margin-top: -15px;
+}
+
+.oxens_val {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 15px;
+  width: 80%;
+  margin-top: 15px;
+  margin-top: 15px;
+  margin-top: 15px;
+  margin-top: 15px;
+  margin-top: 15px;
+  margin-top: 15px;
+  margin-top: 15px;
+  margin-top: 15px;
+}
+
+.oxens_val div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.oxens_val div p {
+  font-size: 18px;
+}
+
+.oxens_val div button {
+  font-size: 12px;
+  color: grey;
 }
