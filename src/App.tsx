@@ -2,6 +2,7 @@ import './App.css';
 import { TonConnectButton } from '@tonconnect/ui-react';
 import { useTonConnect } from './hooks/useTonConnect.ts';
 import { useCounterContract } from './hooks/useCounterContract';
+import Header from './components/Header.tsx';
 
 function App() {
   const { connected } = useTonConnect();
@@ -9,15 +10,16 @@ function App() {
 
   return (
     <div className='App'>
+      <Header/>
       <div className='Container'>
         <TonConnectButton />
 
-        <div className='Card'>
+        {/* <div className='Card'>
           <b>Counter Address</b>
           <div className='Hint'>{address?.slice(0, 30) + '...'}</div>
-        </div>
+        </div> */}
 
-        <div className='Card'>
+        {/* <div className='Card'>
           <b>Counter Value</b>
           <div>{value ?? 'Loading...'}</div>
         </div>
@@ -29,7 +31,7 @@ function App() {
           }}
         >
           Increment
-        </a>
+        </a> */}
       </div>
     </div>
   );

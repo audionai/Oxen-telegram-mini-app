@@ -7,12 +7,14 @@
 .App {
   height: 100vh;
   background-color: var(--tg-theme-bg-color);
-  color: var(--tg-theme-text-color);
+  color: var(--tg-theme-text-color);width: 100%;
+  position: absolute;left: 0;
+  top: 0;
 }
 
 .Container {
-  padding: 2rem;
-  max-width: 500px;
+  /* padding: 2rem; */
+  /* max-width: 500px; */
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -46,7 +48,7 @@
 }
 
 .Card {
-  width: 100%;
+  /* width: 100%; */
   padding: 10px 20px;
   border-radius: 10px;
   background-color: white;
