@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 
 import { TonConnectButton } from '@tonconnect/ui-react';
 import { useTonConnect } from '@/hooks/useTonConnect.ts';
