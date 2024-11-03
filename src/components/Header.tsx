@@ -10,7 +10,7 @@ export default function Header() {
         🐃
       </div>
         we are on mooo
-        <Button variant="">Open</Button>
+        <Button>Open</Button>
         </main>
         {/* <span className="noto-emoji noto-emoji--animated">🥳</span> */}
     </main>

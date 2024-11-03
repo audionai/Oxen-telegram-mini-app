@@ -7,12 +7,12 @@ function Footer() {
 
   // Icons array (could be SVG paths, Unicode, or image sources)
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const icons = [
-    { id: 'home', label: 'Home', icon: '🏠' },
-    { id: 'leaderboard', label: 'Leaderboard', icon: '🏠' },
-    { id: 'friend', label: 'Friend', icon: '🔍' },
-    { id: 'airdrop', label: 'Airdrop', icon: '👤' },
-  ];
+//   const icons = [
+//     { id: 'home', label: 'Home', icon: '🏠' },
+//     { id: 'leaderboard', label: 'Leaderboard', icon: '🏠' },
+//     { id: 'friend', label: 'Friend', icon: '🔍' },
+//     { id: 'airdrop', label: 'Airdrop', icon: '👤' },
+//   ];
 
   return (
     <div className="footer">
