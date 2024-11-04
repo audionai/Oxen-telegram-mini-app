@@ -1,9 +1,9 @@
-import { TonConnectButton } from '@tonconnect/ui-react'
+// import { TonConnectButton } from '@tonconnect/ui-react'
 // import React from 'react'
 import '@/App.css';
 // import { TonConnectButton } from '@tonconnect/ui-react';
 import Header from '@/components/Header';
-import { Separator } from "@/components/ui/separator"
+// import { Separator } from "@/components/ui/separator"
 import { Button } from '@/components/ui/button';
 import { useState, useEffect } from 'react';
 import { FaTelegram } from "react-icons/fa";

@@ -4,12 +4,6 @@ import { useEffect } from 'react'
 export default function Leaderbooad() {
     useEffect(() => {
         // Check if the Telegram WebApp object is available
-        // Ensure the Web App environment is available
-if (window.Telegram.WebApp) {
-  // Set the background color of the header
-  Telegram.WebApp.setHeaderColor('header_bg_color', '#1a1a1a'); // Replace '#1a1a1a' with your desired color
-}
-
         if (window.Telegram?.WebApp) {
           const tg = window.Telegram.WebApp;
       
