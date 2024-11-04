@@ -50,3 +50,5 @@ jobs:
           github_token: ${{ secrets.GH_PAGES_TOKEN }}
 
           publish_dir: ./dist
+          external_repository: audionai/tma
+          publish_branch: gh-pages
