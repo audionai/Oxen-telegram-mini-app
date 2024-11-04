@@ -12,10 +12,10 @@ export default function Leaderbooad() {
           tg.BackButton.show();
       
           // Set a custom header
-        //   tg.expand();
-        //   tg.MainButton.setText('Custom Header');
-        //   tg.MainButton.show();
-        //   tg.setHeaderColor('red'); // Use 'bg_color' or a hex code like '#ffffff'
+          tg.expand();
+          tg.MainButton.setText('Custom Header');
+          tg.MainButton.show();
+          tg.setHeaderColor('red'); // Use 'bg_color' or a hex code like '#ffffff'
       
           // Example: Button click handling
           tg.MainButton.onClick(() => {
