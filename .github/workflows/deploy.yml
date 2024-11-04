@@ -47,16 +47,8 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-<<<<<<< HEAD
           github_token: ${{ secrets.GH_PAGES_TOKENNN }}
 
           publish_dir: ./dist
           external_repository: audionai/tma
           publish_branch: gh-pages
-=======
-          github_token: ${{ secrets.GH_PAGES }}
-
-          publish_dir: ./dist
-          external_repository: audionai/tma
-          publish_branch: gh-pages
->>>>>>> f5161eb33bc364a5698d8403d89a50fc2025a00c
