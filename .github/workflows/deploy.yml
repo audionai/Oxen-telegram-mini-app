@@ -48,7 +48,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           deploy_key: ${{ secrets.GITHUB_TKN }}
-
           publish_dir: ./dist
           external_repository: audionai/tma
           publish_branch: gh-pages
