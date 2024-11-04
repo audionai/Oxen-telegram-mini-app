@@ -14,6 +14,7 @@
 .App {
   height: 100vh;
   background-color: var(--tg-theme-bg-color);
+  background-color: black;
   color: var(--tg-theme-text-color);width: 100%;
   position: absolute;left: 0;
   top: 0;
@@ -154,4 +155,12 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 15px;
+  padding: 9px;
 }

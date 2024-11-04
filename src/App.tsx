@@ -38,7 +38,7 @@ function App() {
       <Routes>
         <Route path="/tma/" element={<Home />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
-        <Route path="/firends" element={<Friends />} />
+        <Route path="/friend" element={<Friends />} />
         <Route path="/airdrop" element={<Airdrop />} />
       </Routes>
 
