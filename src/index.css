@@ -31,11 +31,13 @@
   align-items: center;
   margin: 0 auto;
   text-align: center;
+  overflow: scroll;
   background-color: var(--tg-theme-bg-color);
   background: black;
   border-radius: 20px;
   /* margin-top: -35px; */
   width: 100%;
+  padding-bottom: 60px;
   /* height: calc(100% - 150px); */
   /* height: calc(100% - 150px); */
   height: 100vh;
