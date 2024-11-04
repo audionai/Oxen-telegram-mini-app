@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - main
+      - main  # Trigger deployment when pushing to the main branch
 
 jobs:
   build:
@@ -12,40 +12,43 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3  # Checkout the repository code
 
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: '20'  # Set the Node.js version
 
       - name: Install dependencies
-        run: npm install  # Using npm install directly
+        run: npm install  # Install project dependencies
 
       - name: Build project
-        run: npm run build
+        run: npm run build  # Build the Vite project
+
+      - name: List files in dist (for debugging)
+        run: ls -la ./dist  # List files in the dist directory to verify build success
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
         with:
           name: production-files
-          path: ./dist # Ensure this matches the outDir in vite.config.ts
+          path: ./dist  # Upload the dist directory as an artifact
 
   deploy:
     name: Deploy
-    needs: build
+    needs: build  # Ensure this job runs after the build job
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main'  # Only run on main branch
 
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
           name: production-files
-          path: ./dist # Ensure this matches the upload path
+          path: ./dist  # Download the uploaded artifact to the dist directory
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_PAGES_TOKEN }}
-          publish_dir: ./dist # Ensure this matches the download path
+          github_token: ${{ secrets.GH_PAGES_TOKEN }}  # Use GitHub token for authentication
+          publish_dir: ./dist  # Directory to publish to GitHub Pages
