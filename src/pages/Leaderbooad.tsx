@@ -1,4 +1,5 @@
 // import React from 'react'
+import './main.css'
 import { useEffect } from 'react'
 export default function Leaderbooad() {
     useEffect(() => {
@@ -23,6 +24,29 @@ export default function Leaderbooad() {
         }
       }, []);
   return (
-    <div>Leaderbooad</div>
+    <main className='leader'>
+      <div className='leader_me'>
+        <div>
+          <img src="./Group.jpg" alt=""  />
+          </div>
+        <div>
+          <p className='tag '>#9</p>
+        <p className='name'>Mikiyas Zenebe</p></div>
+      </div>
+        <div className='leader_list '>
+          <p className=''>Top list</p>
+          <div className='leader_li'>
+            <div className='m_l'>
+              <img src="./Group.jpg" alt="" />
+            <div className='ml'>
+              <p className='tag'>#1</p>
+              <p className='name'>Mikiyas Zenebe</p>
+            </div>
+            </div>
+
+          </div>
+      </div>
+    </main>
+    // <div>Leaderbooad</div>
   )
 }

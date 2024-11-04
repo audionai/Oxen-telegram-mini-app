@@ -1,8 +1,8 @@
 // import React from 'react'
 
 import { TonConnectButton } from '@tonconnect/ui-react';
-import { useTonConnect } from '@/hooks/useTonConnect.ts';
-import { useCounterContract } from '@/hooks/useCounterContract';
+// import { useTonConnect } from '@/hooks/useTonConnect.ts';
+// import { useCounterContract } from '@/hooks/useCounterContract';
 export default function Airdrop() {
 
   return (

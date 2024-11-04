@@ -2,12 +2,12 @@ import { TonConnectButton } from '@tonconnect/ui-react'
 // import React from 'react'
 import '@/App.css';
 // import { TonConnectButton } from '@tonconnect/ui-react';
-import { useTonConnect } from '@/hooks/useTonConnect.ts';
-import { useCounterContract } from '@/hooks/useCounterContract';
+// import { useTonConnect } from '@/hooks/useTonConnect.ts';
+// import { useCounterContract } from '@/hooks/useCounterContract';
 import Header from '@/components/Header';
 export default function Home() {
-    const { connected } = useTonConnect();
-    const { value, address, sendIncrement } = useCounterContract();
+    // const { connected } = useTonConnect();
+    // const { value, address, sendIncrement } = useCounterContract();
   
   return (
     <div className='Container'>
