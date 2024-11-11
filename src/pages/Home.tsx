@@ -77,22 +77,22 @@ export default function Home() {
       </div>
         <p className='tasks_pp'>Tasks</p>
     {/* <Drawer> */}
-    <Button className='maints' variant="default" onClick={() => handleTaskClick('Watch YouTube Video', 'https://www.youtube.com')}>
-          <IoLogoYoutube className='logots' /> Go to YouTube
+    <Button className='maints' variant="default" onClick={() => handleTaskClick('Watch YouTube Video', 'https://www.youtube.com/channel/UCzbI-Jing1CTWclPrEBRTgQ')}>
+          <IoLogoYoutube className='logots' /> Subscribe our channel
           <div></div>
         {verifiedTasks['Watch YouTube Video'] && (
           <FaCheckCircle style={{ color: 'green', marginLeft: '8px' }} />
         )}
         </Button>
     <Button className='maints'  variant="default" onClick={() => handleTaskClick('Join the chnnel', 'https:/t.me/oxen_land')}>
-          <FaTelegram className='logots' /> Go to YouTube
+          <FaTelegram className='logots' /> Join our telegram
           <div></div>
         {verifiedTasks['Join the chnnel'] && (
           <FaCheckCircle style={{ color: 'green', marginLeft: '8px' }} />
         )}
         </Button>
-    <Button className='maints'  variant="default" onClick={() => handleTaskClick('on x post', 'https://www.x.com')}>
-          <FaXTwitter className='logots' /> Go to YouTube
+    <Button className='maints'  variant="default" onClick={() => handleTaskClick('on x post', 'https://x.com/Oxen_land')}>
+          <FaXTwitter className='logots' /> Follow on X
         <div></div>
         {verifiedTasks['on x post'] && (
           <FaCheckCircle style={{ color: 'green', marginLeft: '8px' }} />
