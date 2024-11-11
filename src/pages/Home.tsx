@@ -10,6 +10,8 @@ import { FaTelegram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
 import { FaCheckCircle } from "react-icons/fa";
+
+import { TonConnectButton } from '@tonconnect/ui-react';
 export default function Home() {
   const [tasks, setTasks] = useState<string[]>([]);
   const [verifiedTasks, setVerifiedTasks] = useState<{ [key: string]: boolean }>({});
@@ -54,12 +56,14 @@ export default function Home() {
 
     <div className='oxens_'>
       <img src="./Group.jpg" alt="" />
-      <p>{totalPoints}OXEN</p>
+      <p className='mainmain'>{totalPoints} <span className='spn'>OXEN</span></p>
+      
+      <TonConnectButton/>
       <div className='oxens_val'>
-        <div>
+        {/* <div>
             <button>Rewards</button>
             <p>0</p>
-        </div>
+        </div> */}
         <div>
             <button>Tasks</button>
             <p>0</p>
@@ -71,26 +75,29 @@ export default function Home() {
       </div>
       {/* </div> */}
       </div>
-        <p>Tasks</p>
+        <p className='tasks_pp'>Tasks</p>
     {/* <Drawer> */}
-    <Button variant="default" onClick={() => handleTaskClick('Watch YouTube Video', 'https://www.youtube.com')}>
-          <IoLogoYoutube /> Go to YouTube
-        </Button>
+    <Button className='maints' variant="default" onClick={() => handleTaskClick('Watch YouTube Video', 'https://www.youtube.com')}>
+          <IoLogoYoutube className='logots' /> Go to YouTube
+          <div></div>
         {verifiedTasks['Watch YouTube Video'] && (
           <FaCheckCircle style={{ color: 'green', marginLeft: '8px' }} />
         )}
-    <Button variant="default" onClick={() => handleTaskClick('Join the chnnel', 'https:/t.me/oxen_land')}>
-          <FaTelegram /> Go to YouTube
         </Button>
-        {verifiedTasks['Watch YouTube Video'] && (
+    <Button className='maints'  variant="default" onClick={() => handleTaskClick('Join the chnnel', 'https:/t.me/oxen_land')}>
+          <FaTelegram className='logots' /> Go to YouTube
+          <div></div>
+        {verifiedTasks['Join the chnnel'] && (
           <FaCheckCircle style={{ color: 'green', marginLeft: '8px' }} />
         )}
-    <Button variant="default" onClick={() => handleTaskClick('Watch YouTube Video', 'https://www.youtube.com')}>
-          <FaXTwitter /> Go to YouTube
         </Button>
-        {verifiedTasks['Watch YouTube Video'] && (
+    <Button className='maints'  variant="default" onClick={() => handleTaskClick('on x post', 'https://www.x.com')}>
+          <FaXTwitter className='logots' /> Go to YouTube
+        <div></div>
+        {verifiedTasks['on x post'] && (
           <FaCheckCircle style={{ color: 'green', marginLeft: '8px' }} />
         )}
+        </Button>
          <h3>Completed Tasks</h3>
         <ul>
           {tasks.map((task, index) => (

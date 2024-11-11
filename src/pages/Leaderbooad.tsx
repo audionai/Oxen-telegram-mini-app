@@ -25,17 +25,19 @@ export default function Leaderbooad() {
       }, []);
   return (
     <main className='leader'>
-      <div className='leader_me'>
+      <p className='inv'>LeaderBoard</p>
+      <h6>this leder bord table is displaay in dec</h6>
+      {/* <div className='leader_me'>
         <div>
           <img src="./Group.jpg" alt=""  />
           </div>
         <div>
           <p className='tag '>#9</p>
-        <p className='name'>Mikiyas Zenebe</p></div>
-      </div>
+        <p className='name'>Mikiyas Zenebe</p></div> */}
+      {/* </div> */}
         <div className='leader_list '>
-          <p className=''>Top list</p>
-          <div className='leader_li'>
+          {/* <p className=''>Top list</p> */}
+          {/* <div className='leader_li'>
             <div className='m_l'>
               <img src="./Group.jpg" alt="" />
             <div className='ml'>
@@ -44,7 +46,8 @@ export default function Leaderbooad() {
             </div>
             </div>
 
-          </div>
+          </div> */}
+          <p className='mll'>Soon</p>
       </div>
     </main>
     // <div>Leaderbooad</div>

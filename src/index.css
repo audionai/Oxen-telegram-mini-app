@@ -11,6 +11,34 @@
   --tg-theme-button-text-color: black;
 }
 
+*::-webkit-scrollbar {
+background-color: black;
+width: 9px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #131415;
+  width: 9px;
+}
+
+.go3974562317 {
+  background-image: linear-gradient(45deg, #ff035c, #22ddf0)!important;
+}
+
+#ton-connect-button {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.tasks_pp {
+  margin: auto auto auto 15px;
+  /* width: 90%; */
+  font-size: 18px;
+}
+h6 {font-size: 12px;}
 .App {
   height: 100vh;
   background-color: var(--tg-theme-bg-color);
@@ -34,7 +62,7 @@
   overflow: scroll;
   background-color: var(--tg-theme-bg-color);
   background: black;
-  border-radius: 20px;
+  border-radius: 0px;
   /* margin-top: -35px; */
   width: 100%;
   padding-bottom: 60px;

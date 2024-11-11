@@ -66,8 +66,8 @@
   height: calc(100% - 150px);
   background: black;
   /* position: absolute; */
-  bottom: 15px;
-  /* margin-top: -15px; */
+  bottom: 5px;
+  margin-top: 45px;
 }
 
 .oxens_val {
