@@ -84,7 +84,7 @@ export default function Home() {
           <FaCheckCircle style={{ color: 'green', marginLeft: '8px' }} />
         )}
         </Button>
-    <Button className='maints'  variant="default" onClick={() => handleTaskClick('Join the chnnel', 'https:/t.me/oxen_land')}>
+    <Button className='maints'  variant="default" onClick={() => handleTaskClick('Join the chnnel', 'https://t.me/oxen_land')}>
           <FaTelegram className='logots' /> Join our telegram
           <div></div>
         {verifiedTasks['Join the chnnel'] && (
