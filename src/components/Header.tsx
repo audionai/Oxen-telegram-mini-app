@@ -6,7 +6,7 @@ export default function Header() {
     <main className='Top'>
         <main className='Topmain'>
 
-        <div style={{ fontSize: '45px', fontFamily: 'Noto Emoji' }}>
+        <div style={{ fontSize: '35px', fontFamily: 'Noto Emoji' }}>
         🐃
       </div>
         we are on mooo

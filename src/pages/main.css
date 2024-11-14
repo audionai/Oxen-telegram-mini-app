@@ -143,7 +143,7 @@ code {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 0px;
 }
 .copy p {
     font-size: 12px;
@@ -151,8 +151,11 @@ code {
     padding: 10px 15px;
     margin: 15px;
     border-radius: 6px;
-    width: 80%;
+    width: 260px;
     text-overflow: ellipsis;
+    word-break: break-word;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .copy button {
