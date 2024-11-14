@@ -1,7 +1,10 @@
 interface Window {
   Telegram: {
     WebApp: {
-      initDataUnsafe: unknown;
+      initDataUnsafe?: {
+        user: User;
+      };
+    
       ready: () => void;
       expand: () => void;
       setHeaderColor: (color: string) => void;
