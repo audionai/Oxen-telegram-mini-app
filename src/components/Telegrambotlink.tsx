@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 // import React from 'react'
-import { FaCopy } from "react-icons/fa";
+// import { FaCopy } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { IoCopyOutline } from "react-icons/io5";
 function TelegramBotLink() {
