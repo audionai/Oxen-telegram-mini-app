@@ -17,7 +17,6 @@ export default function Airdrop() {
       }
     }
   }, []);
-
   return (
     <div className='lmlm'>
         {/* Airdrop */}
