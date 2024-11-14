@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 // import React from 'react'
-
+import "../declarations"
 // import { TonConnectButton } from '@tonconnect/ui-react';
 // import { useTonConnect } from '@/hooks/useTonConnect.ts';
 // import { useCounterContract } from '@/hooks/useCounterContract';
