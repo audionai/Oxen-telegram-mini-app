@@ -23,10 +23,14 @@ export default function Airdrop() {
         {/* Airdrop */}
         
         {/* <TonConnectButton/> */}
-        <div className='pp'>M</div>
+        <div className='pp'>G</div>
         <p>{username ? username : "Guest"}</p>
-        <p>Task Completed  <code>-</code></p>
-        <p>Invites <code>-</code></p>
+        {/* <p>Task Completed  <code>-</code></p> */}
+        {/* <p>Invites <code>-</code></p> */}
+        <div className="leader_list">
+
+        <p className='mll'>Soon</p>
+        </div>
         </div>
   )
 }
