@@ -21,6 +21,7 @@ export default function Leaderbooad() {
           tg.MainButton.onClick(() => {
             alert('Main button clicked!');
           });
+          window.Telegram.WebApp.setHeaderColor("#FF5733"); // Example: Red color
         }
       }, []);
   return (
