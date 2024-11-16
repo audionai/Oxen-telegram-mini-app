@@ -17,7 +17,7 @@ function TelegramBotLink() {
       // Generate new link and save it if not found in local storage
       const generateLink = () => {
         const randomId = Math.floor(100000000 + Math.random() * 900000000); // 9-digit number
-        const baseURL = "https://t.me/oxen_land_bot?startapp=command&mode=compact";
+        const baseURL = "https://t.me/oxen_land_bot?startapp=";
         const uniqueLink = `${baseURL}${randomId}`;
         setLink(uniqueLink);
         localStorage.setItem("telegramBotLink", uniqueLink); // Save to local storage
