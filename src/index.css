@@ -38,6 +38,9 @@ width: 9px;
   /* width: 90%; */
   font-size: 18px;
 }
+* {
+  color: white;
+}
 h6 {font-size: 12px;}
 .App {
   height: 100vh;
