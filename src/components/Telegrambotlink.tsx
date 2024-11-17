@@ -7,7 +7,7 @@ function TelegramBotLink() {
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
-    const savedLink = localStorage.getItem("telegramBotLink");
+    const savedLink = localStorage.getItem("telegramBotLinkm");
 
     if (savedLink) {
       // Use saved link if it exists in local storage
