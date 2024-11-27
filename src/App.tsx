@@ -9,6 +9,7 @@ import Leaderboard from './pages/Leaderbooad.tsx';
 import Friends from './pages/Friends.tsx';
 import Airdrop from './pages/Airdrop.tsx';
 import { useEffect } from 'react';
+import Analytics from './Analytics';
 function App() {
   useEffect(() => {
     // Check if the Telegram WebApp object is available
@@ -34,6 +35,8 @@ function App() {
   // const { value, address, sendIncrement } = useCounterContract();
 
   return (
+<>
+    <Analytics />
     <div className='App'>
       <Routes>
         <Route path="/tma/" element={<Home />} />
@@ -43,6 +46,8 @@ function App() {
       </Routes>
 
     </div>
+    </>,
+  document.getElementById("root")
   );
 }
 

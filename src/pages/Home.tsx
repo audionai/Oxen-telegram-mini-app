@@ -77,6 +77,13 @@ export default function Home() {
       </div>
         <p className='tasks_pp'>Tasks</p>
     {/* <Drawer> */}
+    <Button className='maints' variant="default" onClick={() => handleTaskClick('Watch u', 'https://www.youtube.com/channel/UCzbI-Jing1CTWclPrEBRTgQ')}>
+          <IoLogoYoutube className='logots' /> Subscribe our channel
+          <div></div>
+        {verifiedTasks['Watch u'] && (
+          <FaCheckCircle style={{ color: 'green', marginLeft: '8px' }} />
+        )}
+        </Button>
     <Button className='maints' variant="default" onClick={() => handleTaskClick('Watch YouTube Video', 'https://www.youtube.com/channel/UCzbI-Jing1CTWclPrEBRTgQ')}>
           <IoLogoYoutube className='logots' /> Subscribe our channel
           <div></div>
