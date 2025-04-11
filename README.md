@@ -1,6 +1,6 @@
 This bot is open source telegram mini app like Dogs, Goats and cats 
 Check this https://audionai.github.io/tma/
-# 🐂 Oxed – A Telegram Mini Game
+# 🐂 Oxen – A Telegram Mini Game
 
 **Oxed** is a fun and engaging Telegram mini game, inspired by the style of classic games like **Dogs**, **Cats**, and **Goats**. Built with love and creativity, Oxed brings a new animal spirit—**the Ox**—to the Telegram gaming experience!
 
