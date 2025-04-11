@@ -19,7 +19,7 @@ Check this https://audionai.github.io/tma/
 ## 🧑‍💻 How It Works
 
 1. Open the Telegram bot.
-2. Launch the Oxed game via the Mini App.
+2. Launch the Oxen game via the Mini App.
 3. Interact and play with the Ox character.
 4. Have fun, and share your score!
 
